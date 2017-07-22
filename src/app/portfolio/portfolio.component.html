@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p>Some applications that i created</p>
+    </div>
+    <div class="row">
+      <div class="col-md-1">
+        <a class="prevpage"  routerLink="/work"></a>
+      </div>
+      <div class="col-md-1 col-md-offset-5">
+        <a class="nextpage"  routerLink="/contact"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">
+        <a target="_blank" href="https://www.microsoft.com/en-us/store/p/unitcon/9nblggh08zpd#">
+         <img src="../../assets/unitcon.PNG" width="394" height="319" (mouseover)="showDetails('unitcon')" (mouseleave)="showDetails('notunitcon')">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a target="_blank" href="https://rajatkhare619.github.io/keyboardDictionary/">
+        <img src="../../assets/keyboarddict.PNG" width="394" height="319" (mouseover)="showDetails('dict')" (mouseleave)="showDetails('notdict')">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p *ngIf="show === 'unitcon'">It's a unit conversion application for Windows Phone based on C#</p>
+        <p *ngIf="show === 'dict'">It is a web application built in VanillaJS. It shows the meaning of random words starting with the key pressed on a keyboard</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <div class="row">
+    <p>I'm familiar with the following tools and technologies:</p>
+  </div>
+  <div class="row">
+    <div>
+      <a class="prevpage"  routerLink="/"></a>
+    </div>
+    <div class="col-md-1 col-md-offset-1">
+      <button class="btn" (click)="changeType('tools')">Tools</button>
+    </div>
+    <div class="col-md-7">
+      <div  *ngIf="selectedType==='technologies'" >
+        <div class="row" *ngFor="let l of langs">
+          <div class="col-md-2">
+            <p class="text-center "> {{l.name}}:</p>
+          </div>
+          <div class="col-md-1">
+            <i class="arrow"></i>
+          </div>
+          <div class="col-md-3">
+            <span class="span-out col-md-3"><span class="span-in" appLevel="{{l.level}}"></span></span>
+          </div>
+        </div>
+      </div>
+      <div  *ngIf="selectedType==='tools'">
+        <div class="row" *ngFor="let t of tools">
+          <div class="col-md-2">
+            <p class="text-center "> {{t.name}}:</p>
+          </div>
+          <div class="col-md-1">
+            <i class="arrow"></i>
+          </div>
+          <div class="col-md-3">
+            <span class="span-out col-md-3"><span class="span-in" appLevel="{{t.level}}"></span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1">
+      <button  id="lang" class="btn" (click)="changeType('technologies')">Languages/frameworks/libraries</button>
+        <a class="nextpage"  routerLink="/education"></a>
+    </div>
+  </div>
+</div>

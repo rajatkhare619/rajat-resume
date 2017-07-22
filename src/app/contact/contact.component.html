@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+    <div >
+      <a class="prevpage"  routerLink="/portfolio"></a>
+    </div>
+    <div class="col-md-8 col-md-offset-1">
+      <h1 class="text-center">Send me a message</h1>
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm" role="form" method="post" id="gform">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" class="form-control" id="name" ngModel name="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Your email</label>
+          <input type="text" class="form-control" id="email" ngModel name="email" >
+        </div>
+        <div class="form-group">
+          <label for="message">Your message</label>
+          <textarea id="message" class="form-control" ngModel name="message"></textarea>
+        </div>
+        <div class="center">
+          <div class="form-group">
+            <button class="btn" type="submit">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-1 col-md-offset-1">
+      <a class="nextpage"  routerLink="/"></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-1 col-md-offset-3">
+      <a href="https://www.facebook.com/rajatkhare619" target="_blank">
+        <span class="facebook"></span>
+      </a>
+    </div>
+    <div class="col-md-1">
+      <a href="https://www.linkedin.com/in/rajatkhare619/" target="_blank">
+        <span class="linkedin"></span>
+      </a>
+    </div>
+    <div class="col-md-1">
+      <a href="mailto:rajatkhare619@gmail.com" target="_blank">
+        <span class="gmail"></span>
+      </a>
+    </div>
+    <div class="col-md-1">
+      <a href="https://github.com/rajatkhare619" target="_blank">
+        <span class="github"></span>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2 col-md-offset-4">
+      <p [@routerTransition] *ngIf="messageSent" id="sent">Message sent!</p>
+    </div>
+  </div>
+</div>

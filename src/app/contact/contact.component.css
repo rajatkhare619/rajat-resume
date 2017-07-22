@@ -1,0 +1,98 @@
+label {
+  display: flex;
+  align-content: center;
+  text-align: center;
+justify-content: center
+}
+
+.btn {
+ background-color: lightskyblue;
+  border-radius: 65px;
+transition: all 1s;
+}
+.btn:hover {
+  transform: scale(1.4);
+  border-color: darkmagenta;
+}
+.btn:focus
+{
+  outline:none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  display: block;
+  height: 48px;
+  width: 48px;
+}
+
+#sent {
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.facebook {
+  background: no-repeat url("../../assets/social/facebook.png");
+}
+
+.linkedin {
+  background: no-repeat url("../../assets/social/linkedin.png");
+}
+
+.gmail {
+  background: no-repeat url("../../assets/social/gmail.png");
+}
+
+.github {
+  background: no-repeat url("../../assets/social/github.png");
+}
+
+.row span{
+  transition: all 2s;
+}
+
+.row span:hover {
+transform: scale(1.5) rotate(360deg);
+
+}
+
+.nextpage {
+  position: absolute;
+  top: 204px;
+  left: 90px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 20px solid lightseagreen;
+  border-bottom: 20px solid transparent;
+}
+
+.nextpage:hover{
+  transform: scale(1.3);
+  border-top: 20px solid transparent;
+  border-left: 20px solid lightcoral;
+  border-bottom: 20px solid transparent;
+}
+
+
+.prevpage {
+  position: absolute;
+  top: 209px;
+  left: 95px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 20px solid lightseagreen;
+  border-bottom: 20px solid transparent;
+}
+
+.prevpage:hover{
+  transform: scale(1.3);
+  border-top: 20px solid transparent;
+  border-right: 20px solid lightcoral;
+  border-bottom: 20px solid transparent;
+}

@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/*!* You can add global styles to this file, and also import other style files *!*/
+/*body {  */
+/*background: url('./assets/beauty-of-nature-3.jpg') no-repeat center center fixed;*/
+/*-webkit-background-size: cover;*/
+/*-moz-background-size: cover;*/
+/*-o-background-size: cover;*/
+/*background-size: cover;*/
+/*font-family: 'Indie Flower', cursive;*/
+/*font-size: xx-large;*/
+/*}*/
+body {
+  font-family: 'Zilla Slab', serif;
+  font-size: x-large;
+}
+
+app-education {
+  position: static !important;
+}
+
+app-work {
+  position: static !important;
+}

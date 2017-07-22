@@ -1,0 +1,19 @@
+nav {
+  background-color: #f7d8ff;
+}
+
+a {
+  border: solid black 3px;
+  margin-right: 5px;
+  border-radius: 9px;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  font-size: xx-large;
+  font-family: serif;
+}
