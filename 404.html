@@ -3,16 +3,28 @@
 <head>
   <meta charset="utf-8">
   <title>Rajat's resume</title>
-  <base href="https://rajatkhare619.github.io/rajat-resume/">
+  <base href="./">
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="./assets/myImage.jpg">
-<link href="styles.2a67fdd241b28ff24a6f.bundle.css" rel="stylesheet"/></head>
+<link href="styles.2a67fdd241b28ff24a6f.bundle.css" rel="stylesheet"/>
+   <script>
+    sessionStorage.redirect = location.href;
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0;URL='https://rajatkhare.com'"></meta>
+  </head>
 <body>
   <app-root>Loading...</app-root>
 
-<script type="text/javascript" src="inline.df9d1d2d3617d707e110.bundle.js"></script><script type="text/javascript" src="polyfills.09eb8bf53e2b0e31756e.bundle.js"></script><script type="text/javascript" src="vendor.bce12592589fac804a69.bundle.js"></script><script type="text/javascript" src="main.3bea42dceefa86b3f97a.bundle.js"></script></body>
+<script type="text/javascript" src="inline.76acf174e6697bf04f18.bundle.js"></script><script type="text/javascript" src="polyfills.09eb8bf53e2b0e31756e.bundle.js"></script><script type="text/javascript" src="vendor.bce12592589fac804a69.bundle.js"></script><script type="text/javascript" src="main.08d19638a3d2f96f3d6c.bundle.js"></script></body>
 </html>
