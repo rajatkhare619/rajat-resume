@@ -23,10 +23,18 @@
         </a>
       </div>
     </div>
+    <div class="row margin-top">
+      <div class="col-md-5 col-md-offset-1">
+        <a target="_blank" href="https://reminder619.firebaseapp.com">
+          <img src="../../assets/ReminderApp.PNG" width="394" height="319" (mouseover)="showDetails('reminderapp')" (mouseleave)="showDetails('notreminderapp')">
+        </a>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-12">
         <p *ngIf="show === 'unitcon'">It's a unit conversion application for Windows Phone based on C#</p>
         <p *ngIf="show === 'dict'">It is a web application built in VanillaJS. It shows the meaning of random words starting with the key pressed on a keyboard</p>
+        <p *ngIf="show === 'reminderapp'">This is a web application that can be used to send messages to various platforms primarily acting as a means of a reminder for important tasks. This project is open-source.</p>
       </div>
     </div>
   </div>

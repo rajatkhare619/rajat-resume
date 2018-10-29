@@ -9,7 +9,6 @@ li:before {
 .nextpage {
   position: absolute;
   top: 208px;
-  left: 182px;
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
@@ -28,7 +27,6 @@ li:before {
 .prevpage {
   position: absolute;
   top: 216px;
-  left: -94px;
   width: 0;
   height: 0;
   border-top: 20px solid transparent;

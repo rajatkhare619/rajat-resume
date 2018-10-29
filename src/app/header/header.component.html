@@ -2,7 +2,8 @@
   <div class="container-fluid">
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><p>{{page.url.length > 1 ? page.url.split('').splice(1, 1).join('').toUpperCase().split('').concat(page.url.split('').splice(2, page.url.length)).join('') : 'About'}}</p></li> <!--If page length is not greater than one then display 'About' otherwise fetch value from route after converting it's first letter to uppercase-->
+        <!--<li><p>{{page.url.length > 1 ? page.url.split('').splice(1, 1).join('').toUpperCase().split('').concat(page.url.split('').splice(2, page.url.length)).join('') : 'About'}}</p></li> &lt;!&ndash;If page length is not greater than one then display 'About' otherwise fetch value from route after converting its first letter to uppercase&ndash;&gt;-->
+        <li><p>{{page ? page : "About"}}</p></li>
         <!--<li routerLinkActive="active"><a routerLink="/skills">Skills</a></li>-->
         <!--<li routerLinkActive="active"><a routerLink="/education">Education</a></li>-->
         <!--<li routerLinkActive="active"><a routerLink="/work">Work</a></li>-->

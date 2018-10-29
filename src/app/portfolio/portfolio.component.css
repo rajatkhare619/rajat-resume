@@ -35,7 +35,6 @@ div img:hover{
 .prevpage {
   position: absolute;
   top: 118px;
-  left: -79px;
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
@@ -48,4 +47,8 @@ div img:hover{
   border-top: 20px solid transparent;
   border-right: 20px solid lightcoral;
   border-bottom: 20px solid transparent;
+}
+
+.margin-top {
+  margin-top: 20px;
 }

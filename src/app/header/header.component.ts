@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {routerTransition} from '../router.animations';
-import {ActivatedRoute, Router} from '@angular/router';
+import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -14,9 +13,11 @@ page: any;
 
   ngOnInit() {
     this.router.events.subscribe(
-      path => {
-        this.page = path;
-        console.log(path);
+      event => {
+        if (event instanceof NavigationEnd ) {
+          this.page = (<string>event['url']).substring(1, 2).toUpperCase().concat((<string>event['url']).substring(2));
+        }
+
       });
   }
 

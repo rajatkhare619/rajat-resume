@@ -16,13 +16,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const appRoutes = [
-  { path: '', component: AboutComponent },
-  { path: 'skills', component: SkillsComponent },
-  { path: 'education', component: EducationComponent },
-  { path: 'work', component: WorkComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: '**', redirectTo: '' }
+  { path: '', component: AboutComponent, data: { routeIdx: 0 } },
+  { path: 'skills', component: SkillsComponent, data: { routeIdx: 1 } },
+  { path: 'education', component: EducationComponent, data: { routeIdx: 2 } },
+  { path: 'work', component: WorkComponent, data: { routeIdx: 3 } },
+  { path: 'portfolio', component: PortfolioComponent, data: { routeIdx: 4 } },
+  { path: 'contact', component: ContactComponent, data: { routeIdx: 5 } },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
